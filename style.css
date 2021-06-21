@@ -1,0 +1,75 @@
+body {
+    background-image: url('arena.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.total {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokebola {
+    animation: to_jump 2s infinite;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    width: 100%;
+    height: 140px;
+    background-color: #d82f2f;
+    border-radius: 500px 500px 0px 0px;
+    border: 8px solid #000;
+}
+
+.white {
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 0px 0px 500px 500px;
+    border: 8px solid #000;
+}
+
+.center_circle {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #000;
+}
+
+.detail_center {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #555;
+    border-radius: 500px;
+}
+
+@keyframes to_jump {
+    0% {
+        margin-bottom: 0px;
+    }
+
+    50% {
+        margin-bottom: 30px;
+    }
+
+    100% {
+        margin-bottom: 0px;
+    }
+}
